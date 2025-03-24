@@ -1,0 +1,82 @@
+/* Use consistent font and light purple background */
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: 'Arimo', sans-serif;
+    background-color: #f3e8ff; /* light purple */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Container using flexbox for 2x2 layout */
+  .calculators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    justify-content: center;
+  }
+  
+  /* Each calculator box */
+  .box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+    box-sizing: border-box;
+  }
+  
+  /* Title styling */
+  .formulaTitle {
+    
+    color: #6a1b9a; /* Purple */
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* Paragraph and input styling */
+  p {
+    margin: 8px 0 4px;
+  }
+  
+  input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  
+  input.unclickable {
+    background-color: #f0f0f0;
+    color: #555;
+    cursor: not-allowed;
+  }
+  
+  /* Purple button styles */
+  button {
+    background-color: #7e57c2;
+    color: white;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6a1b9a;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .box {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,76 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Calculator Grid</title>
 </head>
-<>
+<body>
 
-    <!--HERONS FORMULA-->
+  <div class="calculators">
+    <!-- HERON'S FORMULA -->
     <div class="box heron">
-        <h2 class="formulaTitle">Heron's Formula</h2> <br>
-        <p>Side A:</p>
-        <input type="text" id="heronA" name="heronA">
-        <p>Side B:</p>
-        <input type="text" id="heronB" name="heronB">
-        <p>Side C:</p>
-        <input type="text" id="heronC" name="heronC">
-        <p>Area (Result):</p>
-        <input class="unclickable" type="text" id="heronArea" name="heronArea" readOnly> <br><br>
-        <button type="button" id="heronCalc">Calculate</button>
+      <h2 class="formulaTitle">Heron's Formula</h2>
+      <p>Side A:</p>
+      <input type="text" id="heronA">
+      <p>Side B:</p>
+      <input type="text" id="heronB">
+      <p>Side C:</p>
+      <input type="text" id="heronC">
+      <p>Area (Result):</p>
+      <input class="unclickable" type="text" id="heronArea" readonly>
+      <button type="button" id="heronCalc">Calculate</button>
     </div>
 
-    <!--AMBIGUOUS CASE-->
+    <!-- AMBIGUOUS CASE -->
     <div class="box ambCase">
-        <h2 class="formulaTitle">Ambiguous Case</h2> <br>
-        <p>Angle A:</p>
-        <input type="text" id="ambAngle" name="ambAngle">
-        <p>Side A:</p>
-        <input type="text" id="ambSideA" name="ambSideA">
-        <p>Side B:</p>
-        <input type="text" id="ambSideB" name="ambSideB">
-        <p>Triangle Type (Result):</p>
-        <input class="unclickable" type="text" id="ambType" name="ambType" readOnly> <br><br>
-        <button type="button" id="ambCalc">Calculate</button>
+      <h2 class="formulaTitle">Ambiguous Case</h2>
+      <p>Angle A:</p>
+      <input type="text" id="ambAngle">
+      <p>Side A:</p>
+      <input type="text" id="ambSideA">
+      <p>Side B:</p>
+      <input type="text" id="ambSideB">
+      <p>Triangle Type (Result):</p>
+      <input class="unclickable" type="text" id="ambType" readonly>
+      <button type="button" id="ambCalc">Calculate</button>
     </div>
 
-    <!--NEWTONS METHOD-->
+    <!-- NEWTON'S METHOD -->
     <div class="box newton">
-        <h2 class="formulaTitle">Newton's Method</h2> <br>
-        <p>Root Guess:</p>
-        <input type="text" id="newRoot" name="newRoot">
-        <p>Root Approximation (Result):</p>
-        <input class="unclickable" type="text" id="newApp" name="newApp" readOnly> <br><br>
-        <button type="button" id="newtonCalc">Calculate</button>
+      <h2 class="formulaTitle">Newton's Method</h2>
+      <p>Root Guess:</p>
+      <input type="text" id="newRoot">
+      <p>Root Approximation (Result):</p>
+      <input class="unclickable" type="text" id="newApp" readonly>
+      <button type="button" id="newtonCalc">Calculate</button>
     </div>
 
-    <!--POLYNOMIAL FUNCTION-->
+    <!-- POLYNOMIAL FUNCTION -->
     <div class="box polynomial">
-        <h2 class="formulaTitle">Polynomial Function</h2> <br>
-        <p>Coefficients:</p>
-        <input type="text" id="polyCo" name="polyCo">
-        <p>Exponents:</p>
-        <input type="text" id="polyExp" name="polyExp">
-        <p>x Value:</p>
-        <input type="text" id="polyX" name="polyX">
-        <p>Polynomial Function:</p>
-        <input type="text" id="polyFun" name="polyFun" readOnly>
-        <p>Polynomial Evaluation:</p>
-        <input class="unclickable" type="text" id="polyEva" name="polyEva" readOnly> <br><br>
-        <button type="button" id="polyCalc">Calculate</button>
+      <h2 class="formulaTitle">Polynomial Function</h2>
+      <p>Coefficients:</p>
+      <input type="text" id="polyCo">
+      <p>Exponents:</p>
+      <input type="text" id="polyExp">
+      <p>x Value:</p>
+      <input type="text" id="polyX">
+      <p>Polynomial Function:</p>
+      <input type="text" id="polyFun" readonly>
+      <p>Polynomial Evaluation:</p>
+      <input class="unclickable" type="text" id="polyEva" readonly>
+      <button type="button" id="polyCalc">Calculate</button>
     </div>
-</div>
+  </div>
 
-<script src="script.js"></script>
-
-    </body>
-    
-
-
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
-/* Use consistent font and light purple background */
 body {
     margin: 0;
     padding: 50px;
     font-family: 'Arimo', sans-serif;
-    background-color: #f3e8ff; /* light purple */
+    background-color: #f3e8ff; 
     display: flex;
     justify-content: center;
   }
@@ -17,27 +16,29 @@ body {
     justify-content: center;
   }
   
-  /* Each calculator box */
+  /*CALCULATOR BOXES*/
   .box {
     background-color: white;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(50% - 20px); /* 2 per row */
     box-sizing: border-box;
   }
   
-  /* Title styling */
+  /*TITLES */
   .formulaTitle {
     
     color: #6a1b9a; /* Purple */
-    font-size: 22px;
+    font-size: 27px;
     font-weight: 700;
     margin-bottom: 10px;
-    
+    text-align: center;
+    line-height: 20px; 
   }
+
   
-  /* Paragraph and input styling */
+  /*INPUTS*/
   p {
     margin: 8px 0 4px;
   }
@@ -57,13 +58,13 @@ body {
     cursor: not-allowed;
   }
   
-  /* Purple button styles */
+  /*BUTTONS*/
   button {
     background-color: #7e57c2;
     color: white;
     padding: 10px 26px;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;

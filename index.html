@@ -23,16 +23,51 @@
     </div>
 
     <!--AMBIGUOUS CASE-->
-
+    <div class="box ambCase">
+        <h2 class="formulaTitle">Ambiguous Case</h2> <br>
+        <p>Angle A:</p>
+        <input type="text" id="ambAngle" name="ambAngle">
+        <p>Side A:</p>
+        <input type="text" id="ambSideA" name="ambSideA">
+        <p>Side B:</p>
+        <input type="text" id="ambSideB" name="ambSideB">
+        <p>Triangle Type (Result):</p>
+        <input class="unclickable" type="text" id="ambType" name="ambType" readOnly> <br><br>
+        <button type="button" id="ambCalc">Calculate</button>
+    </div>
 
     <!--NEWTONS METHOD-->
-
+    <div class="box newton">
+        <h2 class="formulaTitle">Newton's Method</h2> <br>
+        <p>Root Guess:</p>
+        <input type="text" id="newRoot" name="newRoot">
+        <p>Root Approximation (Result):</p>
+        <input class="unclickable" type="text" id="newApp" name="newApp" readOnly> <br><br>
+        <button type="button" id="newtonCalc">Calculate</button>
+    </div>
 
     <!--POLYNOMIAL FUNCTION-->
+    <div class="box polynomial">
+        <h2 class="formulaTitle">Polynomial Function</h2> <br>
+        <p>Coefficients:</p>
+        <input type="text" id="polyCo" name="polyCo">
+        <p>Exponents:</p>
+        <input type="text" id="polyExp" name="polyExp">
+        <p>x Value:</p>
+        <input type="text" id="polyX" name="polyX">
+        <p>Polynomial Function:</p>
+        <input type="text" id="polyFun" name="polyFun" readOnly>
+        <p>Polynomial Evaluation:</p>
+        <input class="unclickable" type="text" id="polyEva" name="polyEva" readOnly> <br><br>
+        <button type="button" id="polyCalc">Calculate</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 
     </body>
     
-    <script src="script.js"></script>
+
 
 </body>
 </html>

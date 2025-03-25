@@ -90,3 +90,18 @@ function ambCase(angle, a, b) {
     }
     return "No triangle";
 }
+
+function newton(guess){
+    let x0=guess;
+    let x1=x0;
+    function fx (x){ //Functions for visibility
+        return 6*Math.pow(x, 4) - 13*Math.pow(x, 3) - 18*Math.pow(x, 2) + 7*x + 6;
+    } function fx1 (x){
+        return 24*Math.pow(x, 3) - 39*Math.pow(x, 2) - 36*x + 7
+    }
+    do {
+        x0=x1;
+        x1=x0-fx(x0)/fx1(x0);
+    } while (Math.abs(x0-x1)>0.0001);
+    return Math.round(x1*100)/100; //Returns root value
+}

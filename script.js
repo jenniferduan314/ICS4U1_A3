@@ -46,6 +46,9 @@ document.getElementById("polyCalc").addEventListener("click", function() {
 
 // ACTUAL MATH PART!!
 
+
+//HERON
+
 function heron(a, b, c){
     const root=Math.sqrt(4*a*a*b*b-Math.pow((a*a+b*b-c*c), 2));
     if (a>0 && b>0 && c>0){
@@ -55,6 +58,8 @@ function heron(a, b, c){
         }
     } return "No triangle";
 }
+
+// AMBIGUOUS CASES
 function ambCase(angle, a, b) {
 
     // Checks for invalid inputs (non-positive values)
@@ -106,6 +111,7 @@ function ambCase(angle, a, b) {
     return "No triangle";
 }
 
+// NEWTONS METHOD
 function newton(guess){
     let x0=guess;
     let x1=x0;
@@ -121,6 +127,8 @@ function newton(guess){
     return Math.round(x1*100)/100; //Returns root value
 }
 
+
+// POLYNOMIAL FUNCTION
 function polynomial(coeff, exp, x) {
     // Split and filter out empty strings
     let coefficients = coeff.split(" ").filter(c => c !== "");
